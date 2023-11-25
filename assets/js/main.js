@@ -199,11 +199,16 @@
     })
     //Header
     var fixed_top = $("header");
+    var overlayerVar = $(".overlayer");
     $(window).on('scroll', function () {
       if ($(this).scrollTop() > 300) {
         fixed_top.addClass("header-fixed fadeInUp");
+        overlayerVar.addClass("overlayerOffset");
+        document.getElementById("all").style.marginTop = "120px";
       } else {
         fixed_top.removeClass("header-fixed fadeInUp");
+        overlayerVar.removeClass("overlayerOffset");
+        document.getElementById("all").style.marginTop = "0px";
       }
     });
     //Odometer
@@ -348,26 +353,26 @@
       centerMode: false,
       focusOnSelect: true,
       responsive: [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1
-          }
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
         }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      }
       ]
     });
 
