@@ -204,11 +204,13 @@
       if ($(this).scrollTop() > 300) {
         fixed_top.addClass("header-fixed fadeInUp");
         overlayerVar.addClass("overlayerOffset");
-        document.getElementById("all").style.marginTop = "120px";
+        // document.getElementById("all").style.marginTop = "120px";
+        all.classList.add("all-offset");
       } else {
         fixed_top.removeClass("header-fixed fadeInUp");
         overlayerVar.removeClass("overlayerOffset");
-        document.getElementById("all").style.marginTop = "0px";
+        // document.getElementById("all").style.marginTop = "0px";
+        all.classList.remove("all-offset");
       }
     });
     //Odometer

@@ -13,7 +13,7 @@
             if (name && email && message) {
                 $.ajax({
                     type: "POST",
-                    url: 'contact.php',
+                    url: '../contact/contact.php',
                     data: {
                         'name': name,
                         'email': email,

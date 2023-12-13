@@ -5,7 +5,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 
-$to = 'support@labartisan.net';
+$to = 'jordan.koevoets@gmail.com';
 
 $from = 'no-reply@labartisan.net';
 
@@ -14,7 +14,7 @@ if($name && $email && $phone && $message && $subject) {
 		$headers .= "Reply-To:  $name<$email> \r\n";
 		$headers .= "MIME-Version: 1.0\r\n";
 		$headers .= "Content-Type: text/html; charset=utf-8\r\n";
-		$res = mail($to, $message, $headers);
+		$res = mail($to, $subject, $message, $headers);
 		if($res){
 		echo 'Your Message has been sent successfully!';
 	} else {

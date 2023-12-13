@@ -1975,9 +1975,25 @@ header.header-fixed {
   }
 }
 
+.all-offset {
+  margin-top: 118px;
+}
+
+.overlayerOffset {
+  margin-top: -118px;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu li a {
     padding: 10px 12px;
+  }
+
+  .all-offset {
+    margin-top: 104px;
+  }
+
+  .overlayerOffset {
+    margin-top: -104px;
   }
 }
 
@@ -2037,6 +2053,14 @@ header.header-fixed {
     -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
     transform: scaleY(1);
+  }
+
+  .all-offset {
+    margin-top: 60px;
+  }
+
+  .overlayerOffset {
+    margin-top: -60px;
   }
 }
 
@@ -2114,6 +2138,14 @@ header.header-fixed {
     -webkit-transform: rotate(-45deg) translate(4px, -6px);
     -ms-transform: rotate(-45deg) translate(4px, -6px);
     transform: rotate(-45deg) translate(4px, -6px);
+  }
+
+  .all-offset {
+    margin-top: 46px;
+  }
+
+  .overlayerOffset {
+    margin-top: -46px;
   }
 }
 
@@ -5022,6 +5054,7 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item .feature-content .cate {
 
 .contact-form .form-group button {
   height: 55px;
+  transition: all 0.3s;
 }
 
 @media (max-width: 575px) {
@@ -8029,10 +8062,6 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
   animation: loader-inner 2.5s infinite ease-in;
 }
 
-.overlayerOffset {
-  margin-top: -120px;
-}
-
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -8230,6 +8259,10 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
+}
+
+.custom-button:hover {
+  transform: translateY(4px);
 }
 
 .custom-button.theme-one::before {
