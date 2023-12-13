@@ -136,6 +136,6 @@ var marker = new google.maps.Marker({
   position: myLatlng,
   map: map,
   icon: {
-    url: "assets/images/map-marker.png"
+    url: "../assets/images/map-marker.png"
   }
 })

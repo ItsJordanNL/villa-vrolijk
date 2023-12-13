@@ -4888,12 +4888,23 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item .feature-content .cate {
   border-radius: 10px;
 }
 
+.contact-container {
+  max-width: 750px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.item-link {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 992px) {
   .contact-area {
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    right: 0;
+    margin: 100px 0;
   }
 
   .contact-area .contact-wrapper {
@@ -4913,7 +4924,8 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item .feature-content .cate {
 
 @media (max-width: 991px) {
   .contact-area {
-    margin-top: -220px;
+    margin: 0 0 100px 0;
+    padding-top: 50px;
   }
 }
 
@@ -4923,7 +4935,7 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item .feature-content .cate {
 
 .contact-wrapper .contact-item {
   padding: 0 15px 30px;
-  width: calc(100% / 4);
+  width: calc(100% / 3);
 }
 
 .contact-wrapper .contact-item .contact-thumb {
@@ -8282,3 +8294,7 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.youtube-overlay {
+  background-color: red !important;
+}
