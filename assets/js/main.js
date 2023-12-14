@@ -160,7 +160,7 @@
     $('.scrollToTop').on('click', function () {
       $('html, body').animate({
         scrollTop: 0
-      }, 500);
+      }, 0);
       return false;
     });
     //Header Bar
