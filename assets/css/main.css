@@ -3229,11 +3229,35 @@ div[class*=col]:nth-of-type(6n + 6) .gallery-item .gallery-content .title {
   top: 5px;
   width: 50px;
   height: 50px;
-  background: url(./img/facility-shape.png) no-repeat center center;
+  background: url(../css/img/facility-shape.png) no-repeat center center;
   background-size: contain;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
+}
+
+.facility-shape01::after {
+  background: url(../css/img/facility-shape01.png) no-repeat center center !important;
+}
+
+.facility-shape02::after {
+  background: url(../css/img/facility-shape02.png) no-repeat center center !important;
+}
+
+.facility-shape03::after {
+  background: url(../css/img/facility-shape03.png) no-repeat center center !important;
+}
+
+.facility-shape04::after {
+  background: url(../css/img/facility-shape04.png) no-repeat center center !important;
+}
+
+.facility-shape05::after {
+  background: url(../css/img/facility-shape05.png) no-repeat center center !important;
+}
+
+.facility-shape06::after {
+  background: url(../css/img/facility-shape06.png) no-repeat center center !important;
 }
 
 .facility-item .facility-inner .facility-thumb {
@@ -3820,7 +3844,7 @@ div[class*=col]:nth-of-type(6n + 4) .counter-item.round-style::before {
   content: "";
   width: 50px;
   height: 50px;
-  background: url(./img/quote.png) no-repeat center center;
+  background: url(../css/img/quote.png) no-repeat center center;
   background-size: contain;
   margin-bottom: 15px;
 }
@@ -5508,7 +5532,7 @@ div[class*=col]:nth-of-type(5n + 5) .event-item .event-thumb .date-tag::before {
   left: -8px;
   bottom: -8px;
   right: 8px;
-  background: url(./img/shadow.png) no-repeat center center;
+  background: url(../css/img/shadow.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -5530,17 +5554,17 @@ div[class*=col]:nth-of-type(5n + 5) .event-item .event-thumb .date-tag::before {
 }
 
 .countdown li:nth-of-type(4n + 2)::after {
-  background: url(./img/shape2.png) no-repeat center center;
+  background: url(../css/img/shape2.png) no-repeat center center;
   background-size: contain;
 }
 
 .countdown li:nth-of-type(4n + 3)::after {
-  background: url(./img/shape3.png) no-repeat center center;
+  background: url(../css/img/shape3.png) no-repeat center center;
   background-size: contain;
 }
 
 .countdown li:nth-of-type(4n + 4)::after {
-  background: url(./img/shape4.png) no-repeat center center;
+  background: url(../css/img/shape4.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -7671,7 +7695,7 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
   display: block;
   width: 84px;
   height: 60px;
-  background: url(./img/quote2.png) no-repeat center center;
+  background: url(../css/img/quote2.png) no-repeat center center;
   background-size: contain;
   margin: 0 auto 30px;
 }
