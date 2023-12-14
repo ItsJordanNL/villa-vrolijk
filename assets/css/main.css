@@ -1394,7 +1394,6 @@ input[type=submit] {
 }
 
 .teacher-single-item {
-  margin-bottom: 50px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -2521,6 +2520,10 @@ header.header-fixed {
   text-transform: capitalize;
 }
 
+.names {
+  text-transform: none !important;
+}
+
 .widget .widget-body {
   padding: 25px 30px;
 }
@@ -3377,7 +3380,7 @@ div[class*=col]:nth-of-type(6n + 6) .gallery-item .gallery-content .title {
   align-items: center;
   position: relative;
   max-width: 270px;
-  margin: 0 auto 30px;
+  margin: 30px auto 30px;
 }
 
 .counter-item.round-style::before {
