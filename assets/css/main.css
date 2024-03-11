@@ -826,7 +826,7 @@ input[type=submit] {
 
 @media (min-width: 992px) {
   .padding-top {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .padding-bottom {
@@ -1379,6 +1379,13 @@ input[type=submit] {
 /*Teacher Single Section Starts Here*/
 .teacher-wrapper {
   padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .teacher-wrapper {
+    margin: 0 200px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -1387,6 +1394,8 @@ input[type=submit] {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    justify-content: center;
+    margin: 0 0px;
   }
 }
 
@@ -1402,6 +1411,7 @@ input[type=submit] {
 
 .teacher-single-item .teacher-single-thumb {
   width: 100%;
+  max-width: 500px;
   margin-bottom: 30px;
   box-shadow: 0px 2px 4px 3px rgba(83, 61, 82, 0.06);
   -webkit-border-radius: 50%;
@@ -1418,7 +1428,15 @@ input[type=submit] {
 
 @media (min-width: 768px) {
   .teacher-single-item .teacher-single-thumb {
-    margin-bottom: 50px;
+    width: calc(50% - 25px);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .teacher-single-item .teacher-single-thumb {
+    /* width: calc(50% - 25px); */
+    margin-bottom: 0;
   }
 }
 
@@ -1445,12 +1463,29 @@ input[type=submit] {
 }
 
 .teacher-single-item .teacher-single-content {
-  width: 100%;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .teacher-single-item .teacher-single-content {
+    margin-left: 45px !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .teacher-single-item .teacher-single-content {
+    margin-left: 80px !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .teacher-single-item .teacher-single-content {
-    width: calc(50% - 15px);
+    width: calc(50% - 55px);
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 }
 
@@ -4922,8 +4957,10 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item .feature-content .cate {
 }
 
 a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
 }
 
 .item-link {
@@ -5236,12 +5273,12 @@ a {
 
 /*Page Header Starts Here*/
 .page-header {
-  padding: 180px 0;
+  padding: 110px 0;
 }
 
 @media (max-width: 1199px) {
   .page-header {
-    padding: 140px 0;
+    padding: 90px 0;
   }
 }
 
@@ -5257,7 +5294,6 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(146, 39, 143, 0.9);
   }
 
   .page-header .page-header-content {
@@ -8324,6 +8360,91 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
 
 /*# sourceMappingURL=main.css.map */
 
-.youtube-overlay {
-  background-color: red !important;
+#customers {
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#customers td,
+#customers th {
+  padding: 8px 10px;
+  color: white;
+  text-align: left;
+  width: 300px;
+  border-radius: 12px;
+}
+
+#customers tr:nth-child(2) {
+  background-color: rgb(141, 198, 63);
+}
+
+#customers tr:nth-child(3) {
+  background-color: rgb(146, 39, 143);
+}
+
+#customers tr:nth-child(4) {
+  background-color: rgb(255, 82, 0);
+}
+
+#customers tr:nth-child(5) {
+  background-color: rgb(0, 191, 255);
+}
+
+#customers tr:nth-child(6) {
+  background-color: rgb(225, 26, 31);
+}
+
+#customers tr:nth-child(7) {
+  background-color: rgb(33, 94, 255);
+}
+
+#customers th {
+  padding: 12px 0;
+  background-color: #0e2c53;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.padding-custom {
+  padding-top: 25px;
+}
+
+@media (min-width: 576px) {
+  .padding-custom {
+    padding-top: 50px;
+  }
+}
+
+.absolute-back {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+@media (min-width: 574px) {
+  .absolute-back {
+    top: 65px;
+  }
+}
+
+@media (min-width: 991px) {
+  .absolute-back {
+    top: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .absolute-back {
+    top: 125px;
+  }
+}
+
+.back {
+  height: 40px;
 }
