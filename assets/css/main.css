@@ -1411,7 +1411,7 @@ input[type=submit] {
 
 .teacher-single-item .teacher-single-thumb {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   margin-bottom: 30px;
   box-shadow: 0px 2px 4px 3px rgba(83, 61, 82, 0.06);
   -webkit-border-radius: 50%;
@@ -8435,19 +8435,36 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
 
 .absolute-back {
   position: absolute;
-  top: 50px;
+  top: 53px;
   left: 10px;
+}
+
+.back {
+  padding: 15px;
+  height: 55px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
 @media (min-width: 574px) {
   .absolute-back {
-    top: 65px;
+    top: 67px;
+  }
+
+  .back {
+    height: 65px;
+    padding: 18px;
   }
 }
 
 @media (min-width: 991px) {
   .absolute-back {
-    top: 110px;
+    top: 111px;
+  }
+
+  .back {
+    height: 68px;
   }
 }
 
@@ -8455,12 +8472,18 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
   .absolute-back {
     top: 125px;
   }
-}
 
-.back {
-  height: 40px;
+  .back {
+    height: 70px;
+  }
 }
 
 .certificaten {
   width: auto;
+}
+
+@media (min-width: 992px) {
+  .single-container {
+    max-width: 720px;
+  }
 }
