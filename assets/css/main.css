@@ -4988,7 +4988,7 @@ a {
   .contact-area .contact-wrapper {
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     padding: 50px 15px 13px;
   }
 }
@@ -5288,9 +5288,16 @@ a {
   padding: 110px 0;
 }
 
+.page-header-alternative {
+  padding: 80px 0;
+}
+
 @media (max-width: 1199px) {
   .page-header {
     padding: 90px 0;
+  }
+  .page-header-alternative {
+    padding: 70px 0;
   }
 }
 
@@ -5325,6 +5332,10 @@ a {
 
 .page-header-content {
   text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .page-header-content .title {
@@ -8372,55 +8383,53 @@ div[class*=col]:nth-of-type(6n + 6) .product-list-item .product-thumb {
 
 /*# sourceMappingURL=main.css.map */
 
-#customers {
+.customers {
   border-collapse: separate;
   width: 100%;
-  border-spacing: 5px;
+  border-spacing: 2px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-#customers td,
-#customers th {
+.customers td,
+.customers th {
   padding: 8px 10px;
   color: white;
   text-align: left;
   width: 300px;
-  border-radius: 12px;
 }
 
-#customers tr:nth-child(2) {
+.customers tr:nth-child(even) {
   background-color: rgb(141, 198, 63);
 }
 
-#customers tr:nth-child(3) {
+.customers tr:nth-child(odd) {
   background-color: rgb(146, 39, 143);
 }
 
-#customers tr:nth-child(4) {
-  background-color: rgb(255, 82, 0);
-}
-
-#customers tr:nth-child(5) {
-  background-color: rgb(0, 191, 255);
-}
-
-#customers tr:nth-child(6) {
-  background-color: rgb(225, 26, 31);
-}
-
-#customers tr:nth-child(7) {
-  background-color: rgb(33, 94, 255);
-}
-
-#customers th {
+.customers th {
   padding: 12px 0;
   background-color: #0e2c53;
   color: white;
   text-align: center;
   font-size: 20px;
-  border-radius: 15px;
+}
+
+.customers th:nth-child(odd) {
+  border-radius: 10px 0 0 10px;
+}
+
+.customers th:nth-child(even) {
+  border-radius: 0 10px 10px 0;
+}
+
+.customers td:nth-child(odd) {
+  border-radius: 10px 0 0 10px;
+}
+
+.customers td:nth-child(even) {
+  border-radius: 0 10px 10px 0;
 }
 
 .padding-custom {
